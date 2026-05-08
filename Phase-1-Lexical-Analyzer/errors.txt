@@ -1,0 +1,11 @@
+===================================================
+  PunjAura++ Lexical Analyzer - Error Log
+  Student : Khubaib Saleem
+  Roll No : L1F22BSCS0597
+  Input   : test_program.pj
+===================================================
+
+Line 73  : ERROR          -> Invalid Identifier (must start with K and end with m): "badVariable"
+Line 74  : ERROR          -> Invalid String (must start with K): ""hello world""
+Line 75  : ERROR          -> Unterminated String: ""Kunterminated line ;"
+Line 76  : ERROR          -> Invalid Number Format (only exponential allowed): "0xFF"

@@ -1,0 +1,76 @@
+func KaddNumbersm(Kam, Kbm)
+chalo
+    set Kresultm = Kam + Kbm ;
+    wapas Kresultm ;
+ruk
+
+func KcheckSignm(Kvalm)
+chalo
+    agar (Kvalm)
+    fer
+        print$("KValue is positive") ;
+    warna
+        print$("KValue is zero or negative") ;
+ruk
+
+func KrunLoopsm()
+chalo
+    set Kcountm = 0 ;
+    set KstepValm = 1 ;
+
+    jadon (Kcountm)
+    chalo
+        set Kcountm = Kcountm + KstepValm ;
+        likho(Kcountm) ;
+        agar (Kcountm)
+        fer
+            go#back ;
+    ruk
+
+    @loop
+    chalo
+        set KtempResm = Kcountm %%=  3 ;
+        set KshiftValm = KtempResm <<< 2 ;
+        likho(KshiftValm) ;
+        go#back ;
+    ruk
+ruk
+
+func Kmainm()
+chalo
+    set Kxm = 5 ;
+    set Kym = 3 ;
+    set Kzm = 1.5e2 ;
+    set KbigNm = 9.99e10 ;
+
+    print$("KPunjAura++ Program by Khubaib Saleem") ;
+    print$("KRoll No: L1F22BSCS0597") ;
+
+    set Ksumm = KaddNumbersm(Kxm, Kym) ;
+    likho(Ksumm) ;
+
+    agar (Ksumm)
+    fer
+        print$("KSum computed successfully") ;
+    warna
+        print$("KResult is zero") ;
+
+    check(Kzm)
+    fer
+        lao(Kzm) ;
+
+    agar (KbigNm)
+    fer
+        print$("KExponential number detected") ;
+
+    KrunLoopsm() ;
+    KcheckSignm(Kym) ;
+
+    wapas 0 ;
+ruk
+
+
+set badVariable = 5 ;
+set Knoendm = "hello world" ;
+set Kopenm = "Kunterminated line ;
+set Ktestm = 0xFF ;
